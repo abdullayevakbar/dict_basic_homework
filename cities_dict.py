@@ -8,5 +8,5 @@ def cities_dict(cities: list):
     """
     di = {}
     for i in range(len(cities)):
-        di[cities[i]] = i+1
+        di[i] = cities[i]
     return di
