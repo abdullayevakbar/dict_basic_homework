@@ -1,4 +1,4 @@
-def cities_dict(cities:list):
+def cities_dict(cities: list):
     """
     Given a list of cities names, Return dictionary with keys ordered by city name.
     Args:
@@ -6,4 +6,7 @@ def cities_dict(cities:list):
     Returns:
         dict: dictionary with keys ordered by city name
     """
-    return
+    di = {}
+    for i in range(len(cities)):
+        di[cities[i]] = i+1
+    return di
