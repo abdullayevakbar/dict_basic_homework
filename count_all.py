@@ -1,3 +1,6 @@
+from curses.ascii import isalpha, isdigit
+
+
 def count_all(txt):
     """
     Given a function that takes a string and calculates the number of letters and digits within it.
@@ -7,4 +10,10 @@ def count_all(txt):
     Returns:
         dict: dictionary with letters and digits
     """
-    return
+    a = b = 0
+    for i in txt:
+        if isalpha(i):
+            a += 1
+        if isdigit(i):
+            b += 1
+    return {"letters": a, "digits": b}
